@@ -54,11 +54,11 @@
     <string name="View_all">View All</string>
 
 
-    <string name="Top_Reading_Book">Top Reading Book</string>
-    <string name="New_Arrival_Book">New Arrival Book</string>
+    <string name="Top_Reading_Book">Top Read Books</string>
+    <string name="New_Arrival_Book">New Arrivals</string>
     <string name="Authors">Authors</string>
-    <string name="Free_Book">Free Book</string>
-    <string name="Paid_Book">Paid Book</string>
+    <string name="Free_Book">Free Books</string>
+    <string name="Paid_Book">Paid Books</string>
     <string name="Continue_Reading">Continue Reading</string>
 
     <!--End Home-->
@@ -75,7 +75,7 @@
     <string name="Reviews">Reviews</string>
     <string name="Downloads">Downloads</string>
     <string name="Book_Details">Book Details</string>
-    <string name="What_is_this_book_about">What is this book about ?</string>
+    <string name="What_is_this_book_about">About the book</string>
 
     <string name="Related_Books">Related Books</string>
     <string name="Comments">Comments</string>
