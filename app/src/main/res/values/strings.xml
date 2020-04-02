@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Android E Book</string>
+    <string name="app_name">Bookify</string>
 
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>
@@ -41,8 +41,8 @@
 
     <!--About Us-->
 
-    <string name="Company">Company</string>
-    <string name="website">Website</string>
+    <string name="Company">Kenova</string>
+    <string name="website">https://kenova.co</string>
     <string name="Contact">Contact</string>
 
     <!--End About Us-->
@@ -81,7 +81,7 @@
     <string name="Comments">Comments</string>
     <string name="Write_your_comments">Write your comments</string>
 
-    <string name="My_Purchase_Books">My Purchase Books</string>
+    <string name="My_Purchase_Books">My Purchased Books</string>
     <string name="ALLOW_PERMISSION">ALLOW PERMISSION</string>
 
     <string name="wel_one">Book Details</string>
@@ -99,17 +99,17 @@
     <string name="isRTL">false</string>
     <string name="internet_connection">Internet connection not available</string>
 
-    <string name="permission_desc">Now we need your permission to continue use the application perfectly</string>
-    <string name="permission_title">Everything is okey</string>
+    <string name="permission_desc">We need your permission to continue use the application perfectly</string>
+    <string name="permission_title">Everything is okay</string>
 
 
     <string name="profile">Profile</string>
     <string name="save">save</string>
 
-    <string name="my_Purchase_book">My Purchase Books</string>
+    <string name="my_Purchase_book">My Purchased Books</string>
     <string name="my_downloaded_book">My Downloaded Books</string>
     <string name="enable_push_notification">Enable push notification</string>
-    <string name="enable_theme">Enable Day/Night mode</string>
+    <string name="enable_theme">Enable Dark mode</string>
     <string name="clear_cache">Clear Cache</string>
     <string name="locally_cached_data">locally cached data</string>
     <string name="Privacy_policy">Privacy policy</string>
