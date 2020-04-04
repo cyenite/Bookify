@@ -7,8 +7,8 @@
 
 
     <!--Facebook-->
-    <string name="facebook_app_id" tools:ignore="MissingTranslation">614049552484376</string>
-    <string name="fb_login_protocol_scheme" tools:ignore="MissingTranslation">fb614049552484376</string>
+    <string name="facebook_app_id" tools:ignore="MissingTranslation">216108689603190</string>
+    <string name="fb_login_protocol_scheme" tools:ignore="MissingTranslation">fb216108689603190</string>
 
     <!--Gmail-->
     <string name="web_client_id" tools:ignore="MissingTranslation">476849697961-mp93cmobo60tggji6cl0gts0uqt42tdm.apps.googleusercontent.com</string>
