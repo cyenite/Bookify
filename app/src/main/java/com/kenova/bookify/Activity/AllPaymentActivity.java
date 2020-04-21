@@ -148,17 +148,20 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
                 if (select_payment == 0) {
                     Toast.makeText(AllPaymentActivity.this, "Please select any payment method", Toast.LENGTH_LONG).show();
                 } else if (select_payment == 1) {
-                    startPayment(price + "00", name);
+                   // startPayment(price + "00", name);
                 } else if (select_payment == 2) {
                     Log.e("paypal_payment", "paypal_payment");
-                    thingToBuy = new PayPalPayment(new BigDecimal("" + price), "USD",
+                    thingToBuy = new PayPalPayment(new BigDecimal("" + price), "KES",
                             "" + name, PayPalPayment.PAYMENT_INTENT_SALE);
                     Intent intent = new Intent(AllPaymentActivity.this,
                             PaymentActivity.class);
                     intent.putExtra(PaymentActivity.EXTRA_PAYMENT, thingToBuy);
                     startActivityForResult(intent, REQUEST_CODE_PAYMENT);
                 } else if (select_payment == 3) {
-                    Log.e("upi_payment", "upi_payment");
+
+                    Toast.makeText(getApplicationContext(), "MPesa Payment coming soon", Toast.LENGTH_LONG).show();
+
+                    /*Log.e("upi_payment", "upi_payment");
 
                     Random rand = new Random();
                     int num = rand.nextInt(9000000) + 1000000;
@@ -173,7 +176,7 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
                             .setDescription("" + name)
                             .setAmount("" + price + ".00")
                             .build();
-                    easyUpiPayment.startPayment();
+                    easyUpiPayment.startPayment();*/
                 }
             }
         });
