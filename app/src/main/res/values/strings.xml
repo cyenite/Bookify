@@ -35,7 +35,7 @@
     <string name="full_name">Full Name</string>
     <string name="phone">Phone</string>
     <string name="signup_cap">SIGN UP</string>
-    <string name="already_account">Already have an account Yet?</string>
+    <string name="already_account">Already have an account ?</string>
 
     <!--End Registration-->
 
@@ -108,7 +108,6 @@
 
     <string name="my_Purchase_book">My Purchased Books</string>
     <string name="my_downloaded_book">My Downloaded Books</string>
-    <string name="enable_push_notification">Enable push notification</string>
     <string name="enable_theme">Enable Dark mode</string>
     <string name="clear_cache">Clear Cache</string>
     <string name="locally_cached_data">locally cached data</string>
@@ -120,7 +119,7 @@
     <string name="downloading">Downloading</string>
 
     <string name="change_language">Language</string>
-
+    <string name="enable_push_notification">Enable push notification</string>
 
 
 </resources>
