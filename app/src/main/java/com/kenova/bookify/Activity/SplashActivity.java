@@ -51,7 +51,7 @@ public class SplashActivity extends AppCompatActivity implements ConnectivityRec
         if (isConnected) {
             general_settings();
 
-            MutedVideoView vView = (MutedVideoView) findViewById(R.id.video_view);
+            /*MutedVideoView vView = (MutedVideoView) findViewById(R.id.video_view);
             Uri video = Uri.parse("android.resource://" + getPackageName() + "/"
                     + R.raw.splash);
 
@@ -74,7 +74,8 @@ public class SplashActivity extends AppCompatActivity implements ConnectivityRec
                 vView.start();
             } else {
 //                jump();
-            }
+            }*/
+            jump();
         }
     }
 
