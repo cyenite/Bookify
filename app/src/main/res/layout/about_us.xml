@@ -69,9 +69,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:orientation="vertical"
-                app:cardBackgroundColor="@color/colorAccent"
                 app:cardCornerRadius="5dp"
-                tools:ignore="MissingConstraints">
+                tools:ignore="MissingConstraints"
+                android:elevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -108,7 +108,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:gravity="center_vertical"
-                            android:text="Ebook"
+                            android:text="Bookify"
                             android:textColor="@color/colorPrimary"
                             android:textSize="20dp"
                             android:textStyle="bold" />
@@ -123,8 +123,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:orientation="vertical"
-                app:cardBackgroundColor="@color/colorAccent"
                 app:cardCornerRadius="5dp"
+                android:elevation="4dp"
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout
@@ -188,8 +188,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:orientation="vertical"
-                app:cardBackgroundColor="@color/colorAccent"
                 app:cardCornerRadius="5dp"
+                android:elevation="4dp"
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout
@@ -252,8 +252,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:orientation="vertical"
-                app:cardBackgroundColor="@color/colorAccent"
                 app:cardCornerRadius="5dp"
+                android:elevation="4dp"
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout
@@ -315,8 +315,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:orientation="vertical"
-                app:cardBackgroundColor="@color/colorAccent"
                 app:cardCornerRadius="5dp"
+                android:elevation="4dp"
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout
@@ -386,8 +386,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:orientation="vertical"
-                app:cardBackgroundColor="@color/colorAccent"
                 app:cardCornerRadius="5dp"
+                android:elevation="4dp"
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout

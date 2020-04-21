@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#795548</item>
         <item name="colorPrimaryDark">#5D4037</item>
-        <item name="colorAccent">#795548</item>
+        <item name="colorAccent">#4CAF50</item>
         <item name="backgroundcolor">#FFFFFF</item>
         <item name="cardbackround">#FFFFFF</item>
         <item name="textcolor">#9A9A9A</item>
