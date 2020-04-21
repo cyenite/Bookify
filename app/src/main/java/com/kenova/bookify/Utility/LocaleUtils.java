@@ -16,7 +16,7 @@ public class LocaleUtils {
 
     public static final String ENGLISH = "en";
     public static final String FRENCH = "fr";
-    public static final String Arabic = "ar";
+    public static final String SWAHILI = "sw";
 
     public static void initialize(Context context, @LocaleDef String defaultLanguage) {
         setLocale(context, defaultLanguage);
@@ -40,9 +40,9 @@ public class LocaleUtils {
     }
 
     @Retention(RetentionPolicy.SOURCE)
-    @StringDef({ENGLISH, Arabic, FRENCH})
+    @StringDef({ENGLISH, SWAHILI, FRENCH})
     public @interface LocaleDef {
-        String[] SUPPORTED_LOCALES = {ENGLISH, Arabic, FRENCH};
+        String[] SUPPORTED_LOCALES = {ENGLISH, SWAHILI, FRENCH};
     }
 
 

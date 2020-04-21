@@ -100,8 +100,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/razorpay" />
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gpaylogo" />
 
             </LinearLayout>
 
@@ -140,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="15dp"
-                android:src="@drawable/upiimage" />
+                android:src="@drawable/stklogo" />
 
         </LinearLayout>
 
@@ -161,7 +161,7 @@
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
                 android:text="@string/CONTINUE"
-                android:textColor="@color/colorAccent"
+                android:textColor="@android:color/white"
                 android:textSize="14dp" />
         </LinearLayout>
 

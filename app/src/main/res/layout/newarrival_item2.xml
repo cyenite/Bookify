@@ -50,7 +50,7 @@
                     android:fontFamily="@font/roboto_bold"
                     android:gravity="center_vertical"
                     android:singleLine="true"
-                    android:text="$ 11"
+                    android:text="KES 11"
                     android:textColor="@color/colorAccent"
                     android:textIsSelectable="true"
                     android:textSize="12dp"

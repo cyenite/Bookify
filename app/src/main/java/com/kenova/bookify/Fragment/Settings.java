@@ -264,7 +264,7 @@ public class Settings extends Fragment {
     private void spinner_onclick() {
         List<String> list = new ArrayList<String>();
         list.add("English");
-        list.add("Arabic");
+        list.add("Swahili");
         list.add("French");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, list);
@@ -275,12 +275,12 @@ public class Settings extends Fragment {
             Log.e("selected_eng", "english");
             spinner.setSelection(0);
         }
-        if (LocaleUtils.getSelectedLanguageId().equalsIgnoreCase("ar")) {
-            Log.e("select_Arabic", "Arabic");
+        if (LocaleUtils.getSelectedLanguageId().equalsIgnoreCase("sw")) {
+            Log.e("select_Arabic", "swahili");
             spinner.setSelection(1);
         }
         if (LocaleUtils.getSelectedLanguageId().equalsIgnoreCase("fr")) {
-            Log.e("select_Franch", "fr");
+            Log.e("select_French", "fr");
             spinner.setSelection(2);
         }
 
@@ -293,7 +293,7 @@ public class Settings extends Fragment {
                         setLocale("en");
                         break;
                     case 1:
-                        setLocale("ar");
+                        setLocale("sw");
                         break;
                     case 2:
                         setLocale("fr");
