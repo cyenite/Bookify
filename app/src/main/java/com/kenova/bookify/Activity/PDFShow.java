@@ -33,6 +33,7 @@ import java.io.File;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Objects;
 
 public class PDFShow extends AppCompatActivity implements OnPageChangeListener, OnLoadCompleteListener, OnPageErrorListener {
 
@@ -69,7 +70,7 @@ public class PDFShow extends AppCompatActivity implements OnPageChangeListener, 
         toolbar.setTitle(toolbarTitle);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         pdfView = (PDFView) findViewById(R.id.pdfView_activity);
