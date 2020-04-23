@@ -3,7 +3,7 @@ buildscript {
         maven { url 'https://plugins.gradle.org/m2/' }
     }
     dependencies {
-        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.11.0, 0.99.99]'
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.6'
     }
 }
 
@@ -28,7 +28,7 @@ android {
         android {
             defaultConfig {
                 manifestPlaceholders = [
-                        onesignal_app_id               : '6e703206-bd5e-4aba-9dee-4ddcd6d96db6',
+                        onesignal_app_id               : 'd29a284c-0df2-43e3-99f2-1abbab01aa6d',
                         onesignal_google_project_number: 'REMOTE'
                 ]
             }
