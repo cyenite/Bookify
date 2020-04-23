@@ -84,10 +84,10 @@
     <string name="My_Purchase_Books">My Purchased Books</string>
     <string name="ALLOW_PERMISSION">ALLOW PERMISSION</string>
 
-    <string name="wel_one">Book Details</string>
-    <string name="wel_two">Reviews</string>
-    <string name="wel_three">Downloads</string>
-    <string name="wel_four">Downloads</string>
+    <string name="wel_one">Get access to a wide library of books</string>
+    <string name="wel_two">Book Reviews</string>
+    <string name="wel_three">Download books offline</string>
+    <string name="wel_four">All good! Let\'s get started</string>
 
     <!--End Search-->
 
