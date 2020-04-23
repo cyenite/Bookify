@@ -3,17 +3,17 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#4CAF50</item>
-        <item name="colorPrimaryDark">#388E3C</item>
-        <item name="colorAccent">#4CAF50</item>
+        <item name="colorPrimary">#034078</item>
+        <item name="colorPrimaryDark">#001F54</item>
+        <item name="colorAccent">#D90368</item>
         <item name="backgroundcolor">#FFFFFF</item>
         <item name="cardbackround">#FFFFFF</item>
         <item name="textcolor">#9A9A9A</item>
         <item name="tintcolor">#FFFFFF</item>
-        <item name="buttoncolor">#4CAF50</item>
+        <item name="buttoncolor">#820263</item>
         <item name="toolbartextcolor">#3e4890</item>
         <item name="toolbarbackground">#FFFFFF</item>
-        <item name="categorybordercolor">#4CAF50</item>
+        <item name="categorybordercolor">#820263</item>
         <item name="viewtextcolor">#3e4890</item>
         <item name="toolbarbackTint">#3e4890</item>
         <item name="text_details">@color/text_gray</item>
@@ -33,7 +33,7 @@
         <item name="cardbackround">#424242</item>
         <item name="textcolor">#ffff</item>
         <item name="tintcolor">#ffff</item>
-        <item name="buttoncolor">#4CAF50</item>
+        <item name="buttoncolor">#820263</item>
         <item name="toolbartextcolor">#ffff</item>
         <item name="toolbarbackground">#111111</item>
         <item name="categorybordercolor">#ffff</item>
