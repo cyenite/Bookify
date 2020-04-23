@@ -304,7 +304,7 @@ public class BookDetails extends AppCompatActivity {
                         Log.e("fcat_id", "" + fcat_id);
                         //prefManager.setValue("price",""+);
                         txt_title.setText("" + BookList.get(0).getBTitle());
-                        txt_price.setText("$" + BookList.get(0).getBPrice());
+                        txt_price.setText("KES " + BookList.get(0).getBPrice());
                         txt_by_author.setText("By " + BookList.get(0).getATitle());
                         txt_category.setText("" + BookList.get(0).getCatName());
                         txt_descripation.setText("" + BookList.get(0).getBDescription());
@@ -312,7 +312,7 @@ public class BookDetails extends AppCompatActivity {
                         ratingbar.setRating(Float.parseFloat(BookList.get(0).getAvg_rating()));
 
                         if (BookList.get(0).getIsPaid().equalsIgnoreCase("1")) {
-                            txt_download_buy.setText("$" + BookList.get(0).getBPrice());
+                            txt_download_buy.setText("KES " + BookList.get(0).getBPrice());
                             txt_read.setText("Sample Book");
                         } else {
                             txt_read.setText("Read");
@@ -623,7 +623,7 @@ public class BookDetails extends AppCompatActivity {
 
     private void ReadBook() {
         try {
-            if (prefManager.isNetworkAvailable(BookDetails.this)) {
+            if (PrefManager.isNetworkAvailable(BookDetails.this)) {
                 Log.e("url_data", "" + BookList.get(0).getBUrl().contains(".EPUB"));
                 if (BookList.get(0).getBUrl().contains(".epub") ||
                         BookList.get(0).getBUrl().contains(".EPUB")) {

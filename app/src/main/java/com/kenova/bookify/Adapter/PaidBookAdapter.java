@@ -53,7 +53,7 @@ public class PaidBookAdapter extends RecyclerView.Adapter<PaidBookAdapter.MyView
     @Override
     public void onBindViewHolder(@NonNull PaidBookAdapter.MyViewHolder holder, int position) {
         holder.txt_bookname.setText("" + paidbookList.get(position).getA_title());
-        holder.txt_book_price.setText("$" + paidbookList.get(position).getB_price());
+        holder.txt_book_price.setText("KES " + paidbookList.get(position).getB_price());
         Picasso.with(mcontext).load(paidbookList.get(position).getB_image()).priority(HIGH).into(holder.iv_thumb);
 
         holder.iv_thumb.setOnClickListener(new View.OnClickListener() {
