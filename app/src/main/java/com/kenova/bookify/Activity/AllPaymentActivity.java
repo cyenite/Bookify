@@ -16,6 +16,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.kenova.bookify.Model.SuccessModel.SuccessModel;
+import com.kenova.bookify.Mpesa.Payment;
 import com.kenova.bookify.R;
 import com.kenova.bookify.Utility.PrefManager;
 import com.kenova.bookify.Webservice.AppAPI;
@@ -135,8 +136,6 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
             public void onClick(View view) {
                 if (select_payment == 0) {
                     Toast.makeText(AllPaymentActivity.this, "Please select any payment method", Toast.LENGTH_LONG).show();
-                } else if (select_payment == 1) {
-                   // startPayment(price + "00", name);
                 } else if (select_payment == 2) {
                     Log.e("paypal_payment", "paypal_payment");
                     thingToBuy = new PayPalPayment(new BigDecimal("" + price), "KES",
@@ -147,24 +146,12 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
                     startActivityForResult(intent, REQUEST_CODE_PAYMENT);
                 } else if (select_payment == 3) {
 
-                    Toast.makeText(getApplicationContext(), "MPesa Payment coming soon", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "MPesa Payment coming soon", Toast.LENGTH_LONG).show();
 
-                    /*Log.e("upi_payment", "upi_payment");
-
-                    Random rand = new Random();
-                    int num = rand.nextInt(9000000) + 1000000;
-                    int num_ref = rand.nextInt(9000000) + 1000000;
-
-                    easyUpiPayment = new EasyUpiPayment.Builder()
-                            .with(AllPaymentActivity.this)
-                            .setPayeeVpa("" + prefManager.getValue("UPI"))
-                            .setPayeeName("" + prefManager.getValue("UPI_Name"))
-                            .setTransactionId("" + num)
-                            .setTransactionRefId("" + num_ref)
-                            .setDescription("" + name)
-                            .setAmount("" + price + ".00")
-                            .build();
-                    easyUpiPayment.startPayment();*/
+                    Intent intent = new Intent(AllPaymentActivity.this, Payment.class);
+                    intent.putExtra("price", price);
+                    intent.putExtra("title", name);
+                    startActivity(intent);
                 }
             }
         });
@@ -274,7 +261,7 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
         Purchasebook();
     }
 
-    private void Purchasebook() {
+    public void Purchasebook() {
         progressDialog.show();
         AppAPI bookNPlayAPI = BaseURL.getVideoAPI();
         Call<SuccessModel> call = bookNPlayAPI.add_purchase(id,
@@ -337,7 +324,7 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
 
                         new AlertDialog.Builder(AllPaymentActivity.this)
                                 .setTitle(getResources().getString(R.string.app_name))
-                                .setMessage("Thank you for purchased " + confirm.getPayment().toJSONObject().getString("short_description"))
+                                .setMessage("Thank you for purchasing " + confirm.getPayment().toJSONObject().getString("short_description"))
                                 .setCancelable(false)
                                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                     @Override

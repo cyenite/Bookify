@@ -16,6 +16,7 @@ import com.androidstudy.daraja.model.AccessToken;
 import com.androidstudy.daraja.model.LNMExpress;
 import com.androidstudy.daraja.model.LNMResult;
 import com.androidstudy.daraja.util.TransactionType;
+import com.kenova.bookify.Activity.AllPaymentActivity;
 import com.kenova.bookify.R;
 
 import butterknife.BindView;
@@ -86,6 +87,8 @@ public class Payment extends AppCompatActivity implements View.OnClickListener {
                         @Override
                         public void onResult(@NonNull LNMResult lnmResult) {
                             Log.i(com.kenova.bookify.Mpesa.Payment.this.getClass().getSimpleName(), lnmResult.ResponseDescription);
+                            AllPaymentActivity stkpayed = new AllPaymentActivity();
+                            stkpayed.Purchasebook();
                         }
 
                         @Override
