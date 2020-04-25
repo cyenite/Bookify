@@ -74,6 +74,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Mpesa.Payment"/>
         <activity
             android:name="com.kenova.bookify.Activity.Privacypolicy"
             android:theme="@style/AppTheme.NoActionBar" />
