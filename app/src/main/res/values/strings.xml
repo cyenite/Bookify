@@ -120,6 +120,7 @@
 
     <string name="change_language">Language</string>
     <string name="enable_push_notification">Enable push notification</string>
+    <string name="continue_payment">CONTINUE PAYMENT</string>
 
 
 </resources>

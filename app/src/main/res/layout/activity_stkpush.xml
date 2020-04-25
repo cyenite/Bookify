@@ -88,20 +88,33 @@
             android:inputType="phone"/>
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirm Payment"
-        android:id="@+id/pay"
-        android:enabled="false"
-        android:layout_margin="10dp"
-        />
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_continue_stk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/continue_payment"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ProgressBar
-            android:id="@+id/progressBar"
+            android:id="@+id/progressBarStk"
             android:visibility="invisible"
             style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"

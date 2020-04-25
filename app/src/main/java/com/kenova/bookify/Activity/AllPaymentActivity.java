@@ -47,7 +47,7 @@ import retrofit2.Response;
 
 public class AllPaymentActivity extends AppCompatActivity implements PaymentStatusListener, PaymentResultListener {
 
-    LinearLayout ly_razor, ly_paypal, ly_upi;
+    LinearLayout ly_paypal, ly_upi;
     Button btn_continue;
     int select_payment = 0;
 
@@ -74,7 +74,6 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_payment);
 
-        ly_razor = findViewById(R.id.ly_razor);
         ly_paypal = findViewById(R.id.ly_paypal);
         ly_upi = findViewById(R.id.ly_upi);
         btn_continue = findViewById(R.id.btn_continue);
@@ -112,21 +111,11 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
         String TransactionId = Arrays.toString(arr);
         Log.e("value_str", "" + Arrays.toString(arr));
 
-        ly_razor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                select_payment = 1;
-                ly_razor.setBackground(getResources().getDrawable(R.drawable.round_bor_yellow));
-                ly_paypal.setBackground(getResources().getDrawable(R.drawable.round_bor_gray));
-                ly_upi.setBackground(getResources().getDrawable(R.drawable.round_bor_gray));
-            }
-        });
 
         ly_paypal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 select_payment = 2;
-                ly_razor.setBackground(getResources().getDrawable(R.drawable.round_bor_gray));
                 ly_paypal.setBackground(getResources().getDrawable(R.drawable.round_bor_yellow));
                 ly_upi.setBackground(getResources().getDrawable(R.drawable.round_bor_gray));
             }
@@ -136,7 +125,6 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
             @Override
             public void onClick(View view) {
                 select_payment = 3;
-                ly_razor.setBackground(getResources().getDrawable(R.drawable.round_bor_gray));
                 ly_paypal.setBackground(getResources().getDrawable(R.drawable.round_bor_gray));
                 ly_upi.setBackground(getResources().getDrawable(R.drawable.round_bor_yellow));
             }

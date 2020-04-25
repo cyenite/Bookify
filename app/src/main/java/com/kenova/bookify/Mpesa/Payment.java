@@ -26,9 +26,9 @@ public class Payment extends AppCompatActivity implements View.OnClickListener {
     EditText mNumber;
     @BindView(R.id.BookPrice)
     EditText mAmount;
-    @BindView(R.id.button)
+    @BindView(R.id.btn_continue_stk)
     Button mButton;
-    @BindView(R.id.progressBar)
+    @BindView(R.id.progressBarStk)
     ProgressBar mLoad;
     private Daraja daraja;
 
