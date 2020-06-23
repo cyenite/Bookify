@@ -8,3 +8,4 @@ Look no further. We've got ya!
 
 ## App Development
 Todos: Obtain a working till number (Applied)
+       Implement deep linking (Still pending)
