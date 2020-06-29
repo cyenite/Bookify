@@ -11,6 +11,7 @@ Todos:
 - Obtain a working till number (Applied)
 - Implement deep linking (Still pending)
 - Implement cloud storage and book sharing via link. Requires a lot of deep linking or downloads directly from server db
+### Updates required by admin
 - A comfortable reader
 - Mpesa Payment. 
 - Ability to comment. Similar to Wattpad. 
