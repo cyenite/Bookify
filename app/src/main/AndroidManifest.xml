@@ -20,6 +20,7 @@
         android:required="false" />
 
     <application
+        tools:replace="android:icon"
         android:name="com.kenova.bookify.Utility.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,7 +30,8 @@
         android:resizeableActivity="false"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        >
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -182,6 +184,7 @@
             android:name="io.card.payment.CardIOActivity"
             android:configChanges="keyboardHidden|orientation" />
         <activity android:name="io.card.payment.DataEntryActivity" />
+
     </application>
 
 </manifest>

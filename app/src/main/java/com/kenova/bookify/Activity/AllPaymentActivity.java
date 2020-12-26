@@ -15,6 +15,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.androidstudy.daraja.Daraja;
+import com.androidstudy.daraja.DarajaListener;
+import com.androidstudy.daraja.model.AccessToken;
 import com.kenova.bookify.Model.SuccessModel.SuccessModel;
 import com.kenova.bookify.Mpesa.Payment;
 import com.kenova.bookify.R;
@@ -55,6 +58,7 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
     String name, price;
     PrefManager prefManager;
     ProgressDialog progressDialog;
+    private Daraja daraja;
 
     private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_PRODUCTION;
     // note that these credentials will differ between live & sandbox
@@ -421,6 +425,24 @@ public class AllPaymentActivity extends AppCompatActivity implements PaymentStat
     }
 
     /*=================End Paypal===============================*/
+
+
+    public void mpesaPayment(){
+        daraja = Daraja.with("lpRnSFJyeMPnJ90yO0pOG8grwRuDm3il", "0OTXfudvr2xzLb1Y", new DarajaListener<AccessToken>() {
+            @Override
+            public void onResult(AccessToken accessToken) {
+                Log.i(com.kenova.bookify.Activity.AllPaymentActivity.this.getClass().getSimpleName(), accessToken.getAccess_token());
+            }
+
+            @Override
+            public void onError(String error) {
+                Log.e(com.kenova.bookify.Activity.AllPaymentActivity.this.getClass().getSimpleName(), error);
+
+            }
+        });
+
+
+    }
 
 
 }

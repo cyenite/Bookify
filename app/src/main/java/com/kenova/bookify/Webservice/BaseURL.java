@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class BaseURL {
 
-    public static final String BASE_URL = "http://bookify.kenova.co/";
+    public static final String BASE_URL = "http://bookify.kenova.co.ke/";
 
     public static final String BASE_URL_API = BASE_URL + "index.php/api/";
     public static final String Image_URL = BASE_URL + "assets/images/app/";
